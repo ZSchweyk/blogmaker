@@ -121,7 +121,10 @@ TOC_TITLE_TEMPLATE = """
 
 <title> {0} </title>
 <br>
-<center><h1 style="border-bottom:0px"> {0} </h1></center>
+<center>
+    <h2 style="border-bottom:0px"> {1} </h2>
+    <h1 style="border-bottom:0px"> {0} </h1>
+</center>
 
 """
 
@@ -275,7 +278,8 @@ def make_toc(toc_items, global_config, all_categories, category=None):
         title = category.capitalize()
         root_path = '..'
     else:
-        title = global_config['title']
+        # title = global_config['title']
+        title = global_config["homepage_category"].capitalize()
         root_path = '.'
 
     return (
@@ -284,7 +288,7 @@ def make_toc(toc_items, global_config, all_categories, category=None):
         HEADER_TEMPLATE.replace('$root', root_path) +
         TOGGLE_COLOR_SCHEME_JS +
         make_twitter_card(title, global_config) +
-        TOC_TITLE_TEMPLATE.format(title) +
+        TOC_TITLE_TEMPLATE.format(title, global_config['title']) +
         make_categories_header(all_categories, root_path) +
         TOC_START +
         ''.join(toc_items) +

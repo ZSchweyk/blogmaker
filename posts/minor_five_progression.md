@@ -1,4 +1,4 @@
-[category]: <> (General,Music-Theory)
+[category]: <> (All,Music-Theory)
 [date]: <> (2024/10/06)
 [title]: <> (Minor Five Progression)
 

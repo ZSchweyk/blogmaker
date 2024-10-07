@@ -1,19 +1,19 @@
 <?xml version="1.0" ?>
 <rss version="2.0">
 <channel>
-  <title>Zeyn Schweyk's Website</title>
+  <title>Zeyn Schweyk's Blog</title>
   <link>https://z.schweyk.com/</link>
-  <description>Zeyn Schweyk's Website</description>
+  <description>Zeyn Schweyk's Blog</description>
   <image>
       <url>http://vitalik.ca/images/icon.png</url>
-      <title>Zeyn Schweyk's Website</title>
+      <title>Zeyn Schweyk's Blog</title>
       <link>https://z.schweyk.com/</link>
   </image>
 
 <item>
 <title>Minor Five Progression</title>
-<link>https://z.schweyk.com/general/2024/10/06/minor_five_progression.html</link>
-<guid>https://z.schweyk.com/general/2024/10/06/minor_five_progression.html</guid>
+<link>https://z.schweyk.com/posts/2024/10/06/minor_five_progression.html</link>
+<guid>https://z.schweyk.com/posts/2024/10/06/minor_five_progression.html</guid>
 <pubDate>Sun, 06 Oct 2024 00:00:00 +0000</pubDate>
 <description></description>
 </item>
@@ -21,8 +21,8 @@
 
 <item>
 <title>New Chapter</title>
-<link>https://z.schweyk.com/general/2024/10/06/new_chapter.html</link>
-<guid>https://z.schweyk.com/general/2024/10/06/new_chapter.html</guid>
+<link>https://z.schweyk.com/posts/2024/10/06/new_chapter.html</link>
+<guid>https://z.schweyk.com/posts/2024/10/06/new_chapter.html</guid>
 <pubDate>Sun, 06 Oct 2024 00:00:00 +0000</pubDate>
 <description></description>
 </item>

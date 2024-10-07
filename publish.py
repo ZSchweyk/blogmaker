@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 import os, sys, datetime
 
 PRE_HEADER = """

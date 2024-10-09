@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import os, sys, datetime
 
 PRE_HEADER = """
@@ -106,6 +107,7 @@ RSS_LINK = """
 
 """
 
+# This is the html presented after clicking a post
 TITLE_TEMPLATE = """
 
 <br>
@@ -142,7 +144,7 @@ TOC_END = """ </ul> """
 TOC_ITEM_TEMPLATE = """
 
 <li>
-    <span class="post-meta">{}</span>
+    <span class="post-meta">{} | {}</span>
     <h3 style="margin-top:12px">
       <a class="post-link" href="{}">{}</a>
     </h3>
@@ -229,7 +231,8 @@ def generate_feed(global_config, metadatas):
         return RSS_ITEM_TEMPLATE.format(
             title=metadata['title'],
             link=get_link('/'.join([global_config['posts_directory'], metadata['date'], metadata['filename']])),
-            pub_date=get_date(metadata['date']), description=''
+            pub_date=get_date(metadata['date']),
+            description=''
         )
 
     return RSS_MAIN_TEMPLATE.strip().format(
@@ -268,9 +271,12 @@ def get_printed_date(metadata):
     month = 'JanFebMarAprMayJunJulAugSepOctNovDec'[int(month)*3-3:][:3]
     return year + ' ' + month + ' ' + day
 
+def get_categories(metadata, global_config):
+    return ", ".join([category.capitalize() for category in sorted(metadata['categories']) if category != global_config["homepage_category"]])
+
 def make_toc_item(global_config, metadata, root_path):
     link = metadata_to_path(global_config, metadata)
-    return TOC_ITEM_TEMPLATE.format(get_printed_date(metadata), root_path + '/' + link, metadata['title'])
+    return TOC_ITEM_TEMPLATE.format(get_printed_date(metadata), get_categories(metadata, global_config), root_path + '/' + link, metadata['title'])
 
 
 def make_toc(toc_items, global_config, all_categories, category=None):

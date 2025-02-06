@@ -1,6 +1,6 @@
 [title]: <> (Zeyn Schweyk's Blog)
 [icon]: <> (http://vitalik.ca/images/icon.png)
-[server]: <> (root@moorpark.schweyk.com)
+[server]: <> (schweyk@s1.schweyk.com)
 [website_root]: <> (/var/www/blog.zeyn.schweyk.com)
 [posts_directory]: <> (posts)
 [homepage_category]: <> (all)

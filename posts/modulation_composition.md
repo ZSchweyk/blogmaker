@@ -4,7 +4,7 @@
 
 <center><br>
 
-![alt text](~/blogmaker/images/comp_page1.png "Page 1")
-![alt text](~/blogmaker/images/comp_page2.png "Page 2")
+![](../../../../images/comp_page1.png)
+![](../../../../images/comp_page2.png)
 
 </center><br>

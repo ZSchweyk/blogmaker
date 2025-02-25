@@ -4,7 +4,7 @@
 
 <center><br>
 
-![](../../../../images/comp_page1.png)
-![](../../../../images/comp_page2.png)
+![](../../../../images/modulation_composition/comp_page1.png)
+![](../../../../images/modulation_composition/comp_page2.png)
 
 </center><br>
